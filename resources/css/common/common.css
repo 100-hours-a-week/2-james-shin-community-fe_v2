@@ -1,0 +1,78 @@
+.left-sort {
+    /* 요소를 플렉스 컨테이너로 설정 */
+    display: flex; 
+    /* 내부 요소들을 왼쪽 정렬 */
+    justify-content: flex-start;
+}
+.default-button {
+    /* 버튼의 배경색이 검정 */
+    background-color: black;
+    /* 텍스트 색상이 흰색 */
+    color: white;
+    /* 버튼 안쪽 여백 */
+    padding: 10px 20px;
+    border: none;
+    /* 모서리를 둥글게 */
+    border-radius: 5px;
+    /* 마우스를 올리면 커서가 손가락 모양으로 바뀜 */
+    cursor: pointer;
+    /* 버튼 위쪽에 여백 추가 */
+    margin-top: 10px;
+}
+/* 버튼에 마우스를 올리면 배경이 빨간색으로 변경 */
+.default-button:hover {
+    background-color:#e74c3c;
+}
+.back-button {
+    /* 글자 크기를 1.5배로 설정 */
+    font-size: 1.5rem;
+    /* 텍스트 밑줄 제거 */
+    text-decoration: none;
+    /* 텍스트 색상 검정 */
+    color: black;
+    /* 오른쪽에 20px의 여백 추가 */
+    margin-right: 20px;
+}
+/* 기본 스타일 텍스트와 크기 색상, 링크 밑줄 밑 색상 + 호버 상태 밑줄 추가 및 색상 변경 */
+.default-link {
+    margin-top: 15px;
+    font-size: 0.875rem;
+    color: black;
+}
+.default-link a {
+    text-decoration: none;
+    color:black;
+}
+.default-link a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.helper-text {
+    width: 100%;
+    font-size: 0.875rem;
+    color: red;
+    text-align: left;
+    /* 위쪽에 여백 추가 */
+    margin-top: 5px;
+}
+.full-width-line {
+    /* 전체 너비보다 약간 더 길게 설정 */
+    width: calc(100% + 30px);
+    /* 왼쪽과 오른쪽 여백을 없앰 */
+    margin: 0 -15px;
+    
+    margin-top: 15px;
+
+    gap: 0px;
+    opacity: 0px;
+    /* 반투명 파란색 배경 */
+    background-color: #3b83be6e;
+    height: 2px;
+    border: none;
+}
+/* 뒤로가기 버튼 이미지 사이즈 */
+.back-icon {
+    Height : 18.89px;
+    gap: 0px;
+    opacity: 0px;
+}

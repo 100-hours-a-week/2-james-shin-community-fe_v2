@@ -1,0 +1,46 @@
+.header {
+    /* 헤더가 화면 너비를 모두 차지하도록 설정 */
+    width: 100%;
+    /* 헤더의 최대 너비를 544px로 제한 */
+    max-width: 544px;
+    /* 요소 내부 레이아웃을 플렉스 컨테이너로 설정 */
+    display: flex;
+    /* 내부 요소들을 가로축 기준으로 중앙에 정렬 */
+    justify-content: center;
+    /* 헤더를 상대적으로 배치, 하위 요소들의 절대 위치 지정 시 이 기준에 따라 배치됨 */
+    position: relative;
+    /* 내부 요소들을 세로축 기준으로 중앙에 정렬 */
+    align-items: center;
+    /* 위쪽과 아래쪽에 10px의 여백을 추가 */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* 헤더의 높이를 100px로 고정 */
+    height: 100px;
+}
+.back-button {
+    /* 텍스트의 크기를 기준 폰트 크기의 1.5배로 설정 */
+    font-size: 1.5rem;
+    /* 투명 배경 */
+    background: none;
+    /* 버튼의 테두리를 없앰 */
+    border: none;
+    /* 마우스를 올리면 커서가 손 모양으로 바뀜 */
+    cursor: pointer;
+    /* 텍스트 색상 어두운 회식 */
+    color: #333;
+}
+.header h2 {
+    /* 텍스트 굵기를 기본으로 설정 */
+    font-weight: normal;
+    /* 위아래 여백은 0, 좌우 여백은 자동으로 설정하여 중앙에 정렬 */
+    margin: 0 auto;
+    /* 텍스트 크기 32px */
+    font-size: 32px;
+}
+.profile-icon {
+    /* 텍스트의 크기를 기준 폰트 크기의 1.5배로 설정 */
+    font-size: 1.5rem;
+    /* 텍스트의 너비와 높이를 36px로 고정 */
+    width: 36px;
+    height: 36px;
+}
