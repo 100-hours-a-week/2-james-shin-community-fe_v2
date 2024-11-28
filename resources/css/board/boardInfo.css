@@ -1,0 +1,214 @@
+.board-header {
+    display: flex;
+    flex-direction: column; /* 제목은 위에, 나머지는 아래에 */
+    padding-top:24px;
+    width: 544px;
+}
+
+.board-title {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.img_profile {
+    background-color: #b3b3b3;
+    /* 원으로 만들기 */
+    border-radius: 50%;
+    font-size: 15px;
+    width: 36px;
+    height: 36px;
+}
+
+.board-date {
+    font-size: 14px;
+    width: 133px;
+    margin-left: 24px;
+}
+
+.meta-actions {
+    display: flex; /* 한 줄에 배치 */
+    align-items: center; /* 수직 가운데 정렬 */
+    gap: 10px; /* meta와 actions 사이의 간격 */
+    margin-top: 12px;
+    margin-bottom: 24px;
+    /* justify-content: space-between; */
+}
+
+.board-meta {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    gap: 20px; /* 작성자와 날짜 사이의 간격 */
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.board-actions {
+    gap: 5px; /* 수정 및 삭제 버튼 사이의 간격 */
+    margin-left: auto;
+}
+
+.board-actions button {
+    background-color: #f5f5f5;
+    border: 1px solid #ACA0EB;
+    border-radius: 10px;
+    width: 50px;
+    height: 27px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.board-actions button:hover {
+    background-color: #eee;
+}
+
+
+.hr-line-middle {
+    width: 592px;
+    height: 0px;
+}
+
+.board-content {
+    /* border-radius: 8px; */
+    line-height: 1.6;
+    width: 544px;
+    height: 306px;
+    padding-top: 24px;
+}
+
+.board-stats {
+    display: flex; /* 한 줄에 배치 */
+    gap: 12px;
+    /* border-radius: 10px; */
+    justify-content: center; 
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: #ddd;
+    width: 116px;
+    height: 70px;
+    padding: 10px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    /* font-size: 1rem; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.item-cnt {
+    font-size: 20px;
+}
+.item-text {
+    font-size: 16px;
+}
+
+/* 댓글 작성 */
+.comment-section {
+    display: flex;
+    flex-direction: column; /* 세로 방향으로 정렬 */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 595px;
+    margin-top: 32px;
+    align-items: flex-end; /* 버튼을 오른쪽 정렬, but hr-line도 같이 이동하는 이슈 발생.. */
+}
+
+.comment-input {
+    border: none;
+    border-radius: 4px;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    padding: 10px;
+}
+
+.hr-line {
+    width: 592px;
+    height: 0px;
+    border: 1px;
+    border: 1px solid #00000029
+}
+
+/* class는 common.css에 있는 default-button + id로 세부적인 설정 */
+#btn_comment_add {
+    border: none;
+    border-radius: 16px;
+    background-color: #ACA0EB;
+    color: white;
+    width: 138px;
+    height: 39px;
+    padding: 10px 20px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+/* 댓글 리스트 전체*/
+.comment-list > div:first-child {
+    margin-top: 21px;
+}
+/* 이후 div 요소에 margin-top 16px */
+.comment-list > div:not(:first-child) {
+    margin-top: 16px;
+}
+
+/* 각 댓글 구성 요소 */
+.comment {
+    position: relative;
+    margin-top: 21px;
+    border-bottom: 1px solid #f1f1f1;
+}
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-actions {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    gap: 5px;
+}
+
+.comment-info {
+    display: flex;
+    color: #666;
+    font-size: 0.9rem;
+    align-items: center;
+    gap: 15px;
+}
+
+.comment-text {
+    color: #333;
+    font-size: 1rem;
+    /* top, right, bottom, left 순서 */
+    margin: 5px 0 5px 46px;
+    /* margin-left: 46px; */
+}
+
+/* 수정, 삭제 버튼 */
+.edit-comment,
+.delete-comment {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    width: 50px;
+    height: 30px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.edit-comment:hover,
+.delete-comment:hover {
+    background-color: #eee;
+}
+
+/* 모달 나중에 직접 구현해보기 */

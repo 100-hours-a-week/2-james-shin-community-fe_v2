@@ -36,7 +36,22 @@ app.get('/register', (req, res) => {
 app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'app/views/login.html'));
 });
-
+// 4. 게시판 목록 조회
+app.get('/board', (req, res) => {
+    res.sendFile(path.join(__dirname, 'app/views/board/board.html'));
+});
+// 5. 게시판 상세 조회
+app.get('/boardInfo', (req, res) => {
+    res.sendFile(path.join(__dirname, 'app/views/board/boardInfo.html'));
+});
+// 6. 게시판 수정
+app.get('/boardEdit', (req, res) => {
+    res.sendFile(path.join(__dirname, 'app/views/board/boardEdit.html'));
+});
+// 7. 게시판 작성
+app.get('/boardAdd', (req, res) => {
+    res.sendFile(path.join(__dirname, 'app/views/board/boardAdd.html'));
+});
 //----------서버 시작------------
 // listen 메서드로 서버 실행하여 지정된 PORT(5555)에서 요청을 수신
 app.listen(PORT, () => {

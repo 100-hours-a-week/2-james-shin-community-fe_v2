@@ -1,0 +1,74 @@
+/* 게시글 화면 title */
+.board-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31.2px;
+    width: 570px;
+    margin:24px 0 51px 0;
+    text-align: center;
+}
+
+.title-section,
+.content-section,
+.img-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section label,
+.content-section label,
+.img-section label {
+    font-weight: bold;
+    height: 21px;
+    padding-bottom: 5px;
+    margin: 16px 0;
+}
+
+.line-section {
+    width: 592px;
+    border: 0.5px solid #ddd;
+    margin: 10px 0;
+}
+
+#title-txt, #content-txt, #img_upload {
+    box-sizing: border-box;
+    background-color: #F4F5F7;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #838486;
+    width: 100%;
+    max-width: 570px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+/* 내용은 텍스트가 길어서 height 추가 필요 */
+#content-txt {
+    resize: none;
+    height: 276px;
+}
+
+#p_content_helper {
+    color: #d9534f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+#btn_board_edit {
+    /* 중앙으로 정렬됨 */
+    display: block;
+    background-color: #ACA0EB;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    width: 355px; 
+    max-width: 570px;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+}
